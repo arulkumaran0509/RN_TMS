@@ -1,0 +1,54 @@
+# Keep the frontend and root documentation out of this repository.
+/frontend/
+*.docx
+*.pdf
+~$*.docx
+
+# Environment files and credentials.
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Dependencies and generated output.
+node_modules/
+**/node_modules/
+build/
+**/build/
+dist/
+coverage/
+.expo/
+**/.expo/
+.gradle/
+**/.gradle/
+Pods/
+**/Pods/
+.cache/
+**/.cache/
+
+# Logs and temporary files.
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.tmp
+*.temp
+*.swp
+*.bak
+*.orig
+.DS_Store
+Thumbs.db
+
+# Local-only configuration and uploaded user data.
+/mobile/.claude/
+/backend/uploads/*
+!/backend/uploads/.gitkeep
+/backend/test_in.txt
